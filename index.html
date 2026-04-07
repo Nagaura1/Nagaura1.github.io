@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KENWOOD カーナビ | あなたの使い方にぴったりなのは？</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="header__inner">
+      <!-- ロゴ -->
+      <a href="#" class="header__logo">
+        <img src="assets/images/KENWOODLOGO_header.svg" alt="KENWOOD">
+      </a>
+      <!-- 右側: スペシャルコンテンツ + ハンバーガー -->
+      <div class="header__right">
+        <a href="#" class="header__special">カーナビ?どれを選べばいい?</a>
+        <button class="header__hamburger" aria-label="メニューを開く">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ハンバーガーメニュー（開いたとき表示） -->
+  <nav class="drawer" id="drawer">
+    <ul class="drawer__list">
+      <li><a href="#drive-style" class="drawer__link">あなたのドライブスタイル診断</a></li>
+      <li><a href="#middle-visual" class="drawer__link">カーナビ／ディスプレイオーディオのちがい</a></li>
+      <li><a href="#finder" class="drawer__link">あなたに最適なモデルを見つけよう</a></li>
+    </ul>
+  </nav>
+  <div class="drawer__overlay" id="drawerOverlay"></div>
+
+  <main>
+
+    <!-- ヒーローセクション -->
+    <section class="hero">
+      <!-- 背景画像 1440x698px -->
+      <div class="hero__bg">
+        <img src="assets/images/hero-bg.jpg" alt="" class="hero__bg-image">
+        <div class="hero__overlay"></div>
+      </div>
+
+      <!-- 中央キャッチコピー -->
+      <div class="hero__center">
+        <h1 class="hero__main-copy">あなたの使い方に<span class="break">ぴったりなのは？</span></h1>
+      </div>
+
+      <!-- 下部テキストラベル -->
+      <div class="hero__tabs">
+        <span class="hero__tab">カーナビ</span>
+        <span class="hero__tab">ディスプレイオーディオ</span>
+        <span class="hero__tab">スマホナビ</span>
+      </div>
+    </section>
+
+    <!-- イントロセクション -->
+    <section id="intro" class="intro">
+      <div class="intro__inner">
+        <h2 class="intro__heading">どれを選べばいい?</h2>
+        <p class="intro__text">今のクルマ選びでは、ナビゲーションにもいくつかの選択肢があります。<br>スマホを使ったナビアプリ、スマホ連携型のディスプレイオーディオ、そして専用のカーナビ。<br>どれも便利、けれど使うシーンや目的によって"快適さ"や"安心感"は大きく変わります。<br>あなたに合うのは、どのスタイルでしょうか？</p>
+      </div>
+    </section>
+
+    <!-- ドライブスタイル診断セクション -->
+    <section id="drive-style" class="drive-style">
+      <div class="drive-style__inner">
+
+        <!-- 見出し -->
+        <h2 class="drive-style__heading">あなたのドライブスタイル診断</h2>
+        <p class="drive-style__sub">＼どんなシーンでクルマを使っていますか？／</p>
+
+        <!-- カード3枚 -->
+        <div class="drive-style__cards">
+          <div class="drive-style__card">
+            <img src="assets/images/drive-style-01Top.png" alt="" class="drive-style__img-top">
+            <p class="drive-style__arrow">▼</p>
+            <img src="assets/images/drive-style-01Bottom.png" alt="" class="drive-style__img-bottom">
+          </div>
+          <div class="drive-style__card">
+            <img src="assets/images/drive-style-02Top.png" alt="" class="drive-style__img-top">
+            <p class="drive-style__arrow">▼</p>
+            <img src="assets/images/drive-style-02Bottom.png" alt="" class="drive-style__img-bottom">
+          </div>
+          <div class="drive-style__card">
+            <img src="assets/images/drive-style-03Top.png" alt="" class="drive-style__img-top">
+            <p class="drive-style__arrow">▼</p>
+            <img src="assets/images/drive-style-03Bottom.png" alt="" class="drive-style__img-bottom">
+          </div>
+        </div>
+
+        <!-- カード下コピー -->
+        <p class="drive-style__copy">KENWOODならあなたにぴったりの一台が見つかる。</p>
+
+        <!-- ボタン2つ：左右に分割してそれぞれセンター -->
+        <div class="drive-style__btns">
+          <div class="drive-style__btn-col">
+            <a href="#finder" class="drive-style__btn-code">
+              カーナビ（AV一体型）をお探しの方 <span class="drive-style__btn-arrow">›</span>
+            </a>
+          </div>
+          <div class="drive-style__btn-col">
+            <a href="#finder-da" class="drive-style__btn-code">
+              ディスプレイオーディオをお探しの方 <span class="drive-style__btn-arrow">›</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ミドルビジュアルセクション -->
+    <section id="middle-visual" class="middle-visual">
+      <div class="middle-visual__bg">
+        <img src="assets/images/middle-visual.jpg" alt="" class="middle-visual__bg-image">
+        <div class="middle-visual__overlay"></div>
+      </div>
+      <div class="middle-visual__inner">
+        <h2 class="middle-visual__heading">カーナビ /<br>ディスプレイオーディオのちがい</h2>
+        <p class="middle-visual__text">どちらもKENWOOD。けれど、求める快適さは人それぞれ。<br>あなたのドライブスタイルにぴったりなのは、どっち？</p>
+      </div>
+    </section>
+
+    <!-- 比較セクション -->
+    <section id="comparison" class="comparison">
+      <div class="comparison__inner">
+
+        <!-- セクションタイトルテキスト -->
+        <div class="comparison__title-wrap">
+          <p class="comparison__title-text">⇐ 見てわかる、2つのちがい ⇒</p>
+        </div>
+
+        <!-- ① 概要（×なし・dividerのみ） -->
+        <div class="comparison__block">
+          <!--<div class="comparison__divider"></div>-->
+          <div class="comparison__cols comparison__cols--no-cross">
+            <div class="comparison__col">
+              <div class="comparison__img-wrap fade-in-block">
+                <img src="assets/images/comparison00_Navi.png" alt="カーナビ 概要" class="comparison__img">
+                <a href="#finder" class="comparison__overlay-btn comparison__overlay-btn--large">カーナビ(AV一体型)<span class="btn-break">をお探しの方</span>&nbsp;&nbsp; <span class="comparison__overlay-btn-arrow">></span></a>
+              </div>
+            </div>
+            <div class="comparison__col">
+              <div class="comparison__img-wrap fade-in-block">
+                <img src="assets/images/comparison00_DA.png" alt="ディスプレイオーディオ 概要" class="comparison__img">
+                <a href="#finder-da" class="comparison__overlay-btn comparison__overlay-btn--large">ディスプレイオーディオ<span class="btn-break"></span>をお探しの方 </span>&nbsp;&nbsp;<span class="comparison__overlay-btn-arrow">></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ② 01 ナビゲーション -->
+        <div class="comparison__block">
+          <div class="comparison__block-heading">
+            <span class="comparison__block-num">01</span>
+            <span class="comparison__block-label">ナビゲーション</span>
+            <img src="assets/images/comparison-01navi-icon-120.svg" alt="" class="comparison__icon">
+          </div>
+          <div class="comparison__divider"></div>
+          <div class="comparison__cols">
+            <div class="comparison__col">
+              <div class="comparison__img-wrap fade-in-block">
+                <img src="assets/images/comparison01_Navi.png" alt="カーナビ ナビゲーション" class="comparison__img">
+                <a href="#finder" class="comparison__overlay-btn">おすすめはこちら <span class="comparison__overlay-btn-arrow">&nbsp;&nbsp;></span></a>
+              </div>
+            </div>
+            <div class="comparison__cross">×</div>
+            <div class="comparison__col">
+              <div class="comparison__img-wrap fade-in-block">
+                <img src="assets/images/comparison01_DA.png" alt="ディスプレイオーディオ ナビゲーション" class="comparison__img">
+                <a href="#finder-da" class="comparison__overlay-btn">おすすめはこちら <span class="comparison__overlay-btn-arrow">&nbsp;&nbsp;></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ③ 02 ナビの使いやすさ -->
+        <div class="comparison__block">
+          <div class="comparison__block-heading">
+            <span class="comparison__block-num">02</span>
+            <span class="comparison__block-label">ナビの使いやすさ</span>
+            <img src="assets/images/comparison-02navi-icon-120.svg" alt="" class="comparison__icon">
+          </div>
+          <div class="comparison__divider"></div>
+          <div class="comparison__cols">
+            <div class="comparison__col">
+              <div class="comparison__img-wrap fade-in-block">
+                <img src="assets/images/comparison02_Navi.png" alt="カーナビ ナビの使いやすさ" class="comparison__img">
+                <a href="#finder" class="comparison__overlay-btn">おすすめはこちら <span class="comparison__overlay-btn-arrow">&nbsp;&nbsp;></span></a>
+              </div>
+            </div>
+            <div class="comparison__cross">×</div>
+            <div class="comparison__col">
+              <div class="comparison__img-wrap fade-in-block">
+                <img src="assets/images/comparison02_DA.png" alt="ディスプレイオーディオ ナビの使いやすさ" class="comparison__img">
+                <a href="#finder-da" class="comparison__overlay-btn">おすすめはこちら <span class="comparison__overlay-btn-arrow">&nbsp;&nbsp;></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ④ 03 動画&音楽視聴 -->
+        <div class="comparison__block">
+          <div class="comparison__block-heading">
+            <span class="comparison__block-num">03</span>
+            <span class="comparison__block-label">動画＆音楽視聴</span>
+            <img src="assets/images/comparison-03navi-icon-120.svg" alt="" class="comparison__icon">
+          </div>
+          <div class="comparison__divider"></div>
+          <div class="comparison__cols">
+            <div class="comparison__col">
+              <div class="comparison__img-wrap fade-in-block">
+                <img src="assets/images/comparison03_Navi.png" alt="カーナビ 動画&音楽視聴" class="comparison__img">
+                <a href="#finder" class="comparison__overlay-btn">おすすめはこちら <span class="comparison__overlay-btn-arrow">&nbsp;&nbsp;></span></a>
+              </div>
+            </div>
+            <div class="comparison__cross">×</div>
+            <div class="comparison__col">
+              <div class="comparison__img-wrap fade-in-block">
+                <img src="assets/images/comparison03_DA.png" alt="ディスプレイオーディオ 動画&音楽視聴" class="comparison__img">
+                <a href="#finder-da" class="comparison__overlay-btn">おすすめはこちら <span class="comparison__overlay-btn-arrow">&nbsp;&nbsp;></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ⑤ 04 音声認識 -->
+        <div class="comparison__block">
+          <div class="comparison__block-heading">
+            <span class="comparison__block-num">04</span>
+            <span class="comparison__block-label">音声認識</span>
+            <img src="assets/images/comparison-04navi-icon-120.svg" alt="" class="comparison__icon">
+          </div>
+          <div class="comparison__divider"></div>
+          <div class="comparison__cols">
+            <div class="comparison__col">
+              <div class="comparison__img-wrap fade-in-block">
+                <img src="assets/images/comparison04_Navi.png" alt="カーナビ 音声認識" class="comparison__img">
+                <a href="#finder" class="comparison__overlay-btn">おすすめはこちら <span class="comparison__overlay-btn-arrow">&nbsp;&nbsp;></span></a>
+              </div>
+            </div>
+            <div class="comparison__cross">×</div>
+            <div class="comparison__col">
+              <div class="comparison__img-wrap fade-in-block">
+                <img src="assets/images/comparison04_DA.png" alt="ディスプレイオーディオ 音声認識" class="comparison__img">
+                <a href="#finder-da" class="comparison__overlay-btn">おすすめはこちら <span class="comparison__overlay-btn-arrow">&nbsp;&nbsp;></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ⑥ 05 地図更新 -->
+        <div class="comparison__block">
+          <div class="comparison__block-heading">
+            <span class="comparison__block-num">05</span>
+            <span class="comparison__block-label">地図更新</span>
+            <img src="assets/images/comparison-05navi-icon-120.svg" alt="" class="comparison__icon">
+          </div>
+          <div class="comparison__divider"></div>
+          <div class="comparison__cols">
+            <div class="comparison__col">
+              <div class="comparison__img-wrap fade-in-block">
+                <img src="assets/images/comparison05_Navi.png" alt="カーナビ 地図更新" class="comparison__img">
+                <a href="#finder" class="comparison__overlay-btn">おすすめはこちら <span class="comparison__overlay-btn-arrow">&nbsp;&nbsp;></span></a>
+              </div>
+            </div>
+            <div class="comparison__cross">×</div>
+            <div class="comparison__col">
+              <div class="comparison__img-wrap fade-in-block">
+                <img src="assets/images/comparison05_DA.png" alt="ディスプレイオーディオ 地図更新" class="comparison__img">
+                <a href="#finder-da" class="comparison__overlay-btn">おすすめはこちら <span class="comparison__overlay-btn-arrow">&nbsp;&nbsp;></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ⑦ おすすめする人（上下に線・×なし・番号なし） -->
+        <div class="comparison__block comparison__block--recommend">
+          <!-- <div class="comparison__divider"></div> -->
+          <div class="comparison__block-heading">
+            <span class="comparison__block-label">おすすめする人</span>
+          </div>
+          <div class="comparison__divider"></div>
+          <div class="comparison__cols comparison__cols--no-cross">
+            <div class="comparison__col">
+              <div class="comparison__img-wrap fade-in-block">
+                <img src="assets/images/comparison_osusume_Navi.png" alt="カーナビ おすすめする人" class="comparison__img comparison__img--osusume">
+                <a href="#finder" class="comparison__overlay-btn comparison__overlay-btn--large">カーナビ（AV一体型）をお探しの方 <span class="comparison__overlay-btn-arrow">&nbsp;&nbsp;></span></a>
+              </div>
+            </div>
+            <div class="comparison__col">
+              <div class="comparison__img-wrap fade-in-block">
+                <img src="assets/images/comparison_osusume_DA.png" alt="ディスプレイオーディオ おすすめする人" class="comparison__img comparison__img--osusume">
+                <a href="#finder-da" class="comparison__overlay-btn comparison__overlay-btn--large">ディスプレイオーディオをお探しの方 <span class="comparison__overlay-btn-arrow">&nbsp;&nbsp;></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- /.comparison -->
+
+    <!-- ファインダーセクション -->
+    <section id="finder" class="finder">
+
+      <!-- 白背景エリア：見出し＋吹き出し -->
+      <div class="finder__header">
+        <div class="finder__header-inner">
+          <h2 class="finder__heading">あなたに最適なモデルを見つけよう</h2>
+          <p class="finder__caption">選択肢が多いからこそ、迷ってしまう。<br>そんなあなたのために、KENWOODがナビします。</p>
+        </div>
+      </div>
+
+      <!-- グレー背景エリア -->
+      <div class="finder__body">
+        <div class="finder__inner">
+
+          <!-- カテゴリヘッダー -->
+          <div class="finder__category-header">
+            <img src="assets/images/finder-carnavi-icon.png" alt="カーナビ" class="finder__category-icon">
+            <h3 class="finder__category-title">カーナビ（AV一体型）</h3>
+            <p class="finder__category-sub">"安心して任せられる"おすすめカーナビモデル</p>
+            <a href="#" class="finder__category-btn">おすすめ一覧</a>
+          </div>
+
+          <!-- 製品カード一覧 -->
+          <div class="finder__products">
+
+            <!-- MDV-MX12F -->
+            <div class="finder__product-card fade-in-block">
+              <div class="finder__product-col">
+                <p class="finder__product-label">モデル</p>
+                <img src="assets/images/finder-MDV-MX12F.png" alt="MDV-MX12F" class="finder__product-img">
+                <p class="finder__product-name">MDV-MX12F</p>
+                <a href="https://www.kenwood.com/jp/car/car-navi/products/mdv-mx12f/" class="finder__product-btn" target="_blank">製品情報 ></a>
+              </div>
+              <div class="finder__product-col">
+                <p class="finder__product-label">特長</p>
+                <p class="finder__product-text">"彩速ナビ"最上位となる10V型 フローティングモデル。<br><br>業界初の Mini LED バックライト採用ディスプレイ「ダイヤモンドアレイディスプレイ」を搭載し、高輝度かつ高コントラストを実現。</p>
+              </div>
+              <div class="finder__product-col">
+                <p class="finder__product-label">おすすめポイント</p>
+                <p class="finder__product-text">10インチ × Mini-LEDで地図も映像も驚くほど見やすい。<br><br>ナビ・音楽・映像・スマホ連携が1台で完結する最上位オールインワン。<br><br>音声操作や高速レスポンスで、運転中もストレスなく使える。</p>
+              </div>
+            </div>
+
+            <!-- MDV-M912F -->
+            <div class="finder__product-card fade-in-block">
+              <div class="finder__product-col">
+                <p class="finder__product-label">モデル</p>
+                <img src="assets/images/finder-MDV-M912F.png" alt="MDV-M912F" class="finder__product-img">
+                <p class="finder__product-name">MDV-M912F</p>
+                <a href="https://www.kenwood.com/jp/car/car-navi/products/mdv-m912f/" class="finder__product-btn" target="_blank">製品情報 ></a>
+              </div>
+              <div class="finder__product-col">
+                <p class="finder__product-label">特長</p>
+                <p class="finder__product-text">9V型の最上位フローティングモデル。HDパネル＆広視野角を採用し約2.4倍の高解像度を実現。<br><br>さらに高精度3Dジャイロセンサーによる測位精度の強化や、HDMI入力／ハイレゾ対応など、プレミアム体験を追求した仕様。</p>
+              </div>
+              <div class="finder__product-col">
+                <p class="finder__product-label">おすすめポイント</p>
+                <p class="finder__product-text">"とことんこだわる"音質・映像・案内性能を求める方に。<br><br>高級車・グレードアップ車両に合う、上質なナビを探しているユーザーに。<br><br>大画面＋スマホ連携＋先進技術を全て欲しい、というドライブ体験重視派に。</p>
+              </div>
+            </div>
+
+            <!-- MDV-M812F -->
+            <div class="finder__product-card fade-in-block">
+              <div class="finder__product-col">
+                <p class="finder__product-label">モデル</p>
+                <img src="assets/images/finder-MDV-M812F.png" alt="MDV-M812F" class="finder__product-img">
+                <p class="finder__product-name">MDV-M812F</p>
+                <a href="https://www.kenwood.com/jp/car/car-navi/products/mdv-m812f/" class="finder__product-btn" target="_blank">製品情報 ></a>
+              </div>
+              <div class="finder__product-col">
+                <p class="finder__product-label">特長</p>
+                <p class="finder__product-text">8V型サイズのフローティングモデル。HDパネル（1280×720）搭載、スマートフォン連携（Apple CarPlay／Android Auto）にも対応。<br><br>ナビ／AV／スマホ連携をバランス良く備えたミドルクラス。</p>
+              </div>
+              <div class="finder__product-col">
+                <p class="finder__product-label">おすすめポイント</p>
+                <p class="finder__product-text">「新車／既販車どちらにも取り付けやすい」モデルを探している方に。<br><br>画面サイズ・機能ともに"一歩上"を目指したいがあまり予算をかけたくない方向け。<br><br>スマホ使用が多く、ナビもあってほしいという"両立型ユーザー"に。</p>
+              </div>
+            </div>
+
+            <!-- MDV-M712W -->
+            <div class="finder__product-card fade-in-block">
+              <div class="finder__product-col">
+                <p class="finder__product-label">モデル</p>
+                <img src="assets/images/finder-MDV-M712W.png" alt="MDV-M712W" class="finder__product-img">
+                <p class="finder__product-name">MDV-M712W</p>
+                <a href="https://www.kenwood.com/jp/car/car-navi/products/mdv-m712w_mdv-m712/" class="finder__product-btn" target="_blank">製品情報 ></a>
+              </div>
+              <div class="finder__product-col">
+                <p class="finder__product-label">特長</p>
+                <p class="finder__product-text">7V型200mmワイドサイズという、コンパクト車や軽自動車への取り付けに適したモデル。<br><br>HDパネル搭載、スマホ連携対応、HDMI入力対応、音声操作対応など充実機能を備えます。</p>
+              </div>
+              <div class="finder__product-col">
+                <p class="finder__product-label">おすすめポイント</p>
+                <p class="finder__product-text">軽自動車やコンパクトカーを購入したり後付けしたりする方に最適。<br><br>「ナビも使いたいけれど、スペースや予算を抑えたい」方向け。<br><br>スマホ連携とナビ機能を"スマートに収めたい"ユーザーにおすすめ。</p>
+              </div>
+            </div>
+
+          </div><!-- /.finder__products -->
+
+          <!-- まとめテキスト -->
+          <div class="finder__summary">
+            <h4 class="finder__summary-heading">カーナビを選ぶなら「安定＋操作性＋安心感」</h4>
+            <p class="finder__summary-text">KENWOODのカーナビは、スマホ接続や電波状況に左右されない"信頼の案内"が強み。<br>
+  さらにDVDスロット・高精度測位・地図更新サポートなど、<br>  
+  ディスプレイオーディオにはない「安心して任せられる機能」がそろっています。</p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ファインダーセクション：ディスプレイオーディオ -->
+    <section id="finder-da" class="finder finder--da">
+      <div class="finder__body finder__body--da">
+        <div class="finder__inner">
+
+          <!-- カテゴリヘッダー -->
+          <div class="finder__category-header">
+            <img src="assets/images/finder-da-icon.png" alt="ディスプレイオーディオ" class="finder__category-icon">
+            <h3 class="finder__category-title">ディスプレイオーディオ</h3>
+            <p class="finder__category-sub">"つながる快適"を選べるディスプレイオーディオラインアップ</p>
+            <a href="#" class="finder__category-btn">おすすめ一覧</a>
+          </div>
+
+          <!-- 製品カード一覧 -->
+          <div class="finder__products">
+
+            <!-- DMX7509XS -->
+            <div class="finder__product-card fade-in-block">
+              <div class="finder__product-col">
+                <p class="finder__product-label">モデル</p>
+                <img src="assets/images/finder-DMX7509XS.png" alt="DMX7509XS" class="finder__product-img">
+                <p class="finder__product-name">DMX7509XS</p>
+                <a href="https://www.kenwood.com/jp/car/receivers/products/dmx7509xs/" class="finder__product-btn" target="_blank">製品情報 ></a>
+              </div>
+              <div class="finder__product-col">
+                <p class="finder__product-label">特長</p>
+                <p class="finder__product-text">2025年モデルの9V型フローティングディスプレイオーディオ。<br>大画面HDパネル、ワイヤレス「Apple CarPlay／Android Auto」対応。<br>3D角度調整機構を備え、車内の見やすさ・操作性を高めた仕様。</p>
+              </div>
+              <div class="finder__product-col">
+                <p class="finder__product-label">おすすめポイント</p>
+                <p class="finder__product-text">車内の画面を“迫力＆視認性”重視で使いたい方に。<br>大画面で地図・アプリ・動画を見やすく。<br>スマホ連携をフル活用し、車内エンターテインメントも高めたい方に。</p>
+              </div>
+            </div>
+
+            <!-- DMX7525S -->
+            <div class="finder__product-card fade-in-block">
+              <div class="finder__product-col">
+                <p class="finder__product-label">モデル</p>
+                <img src="assets/images/finder-DMX7525S.png" alt="DMX7525S" class="finder__product-img">
+                <p class="finder__product-name">DMX7525S</p>
+                <a href="https://www.kenwood.com/jp/car/receivers/products/dmx7525s/" class="finder__product-btn" target="_blank">製品情報 ></a>
+              </div>
+              <div class="finder__product-col">
+                <p class="finder__product-label">特長</p>
+                <p class="finder__product-text">2025年モデルの6.9V型インダッシュ型ディスプレイオーディオ。高精細HDパネルを採用し、ワイヤレス／有線で「Apple CarPlay」「Android Auto」に対応。<br>HD 1280×720表示・スマホミラーリング・HDMI入力など機能が充実。</p>
+              </div>
+              <div class="finder__product-col">
+                <p class="finder__product-label">おすすめポイント</p>
+                <p class="finder__product-text">インダッシュ取付車両に自然に収まり、純正機からの置き換えを意識する方に。<br>スマホ連携機能を“ワイヤレス＋大画面＋高画質”で活用したい方に最適。<br>音質・映像性能も重視したいけれど、カーナビまでは必要ないという方に。</p>
+              </div>
+            </div>
+
+            <!-- DDX5020SR -->
+            <div class="finder__product-card fade-in-block">
+              <div class="finder__product-col">
+                <p class="finder__product-label">モデル</p>
+                <img src="assets/images/finder-DDX5020SR.png" alt="DDX5020SR" class="finder__product-img">
+                <p class="finder__product-name">DDX5020SR</p>
+                <a href="https://www.kenwood.com/jp/car/receivers/products/ddx5020sr/" class="finder__product-btn" target="_blank">製品情報 ></a>
+              </div>
+              <div class="finder__product-col">
+                <p class="finder__product-label">特長</p>
+                <p class="finder__product-text">7インチ／6.8V型ワイド画面を備えたディスプレイオーディオレシーバー 「Apple CarPlay」「Android Auto」対応、DVD／CD再生・USB／Bluetooth接続。</p>
+              </div>
+              <div class="finder__product-col">
+                <p class="finder__product-label">おすすめポイント</p>
+                <p class="finder__product-text">スマホアプリを車内の画面で直感的に操作したい方に。<br>DVD／CDも使えるので、スマホだけでは物足りない方にも安心。</p>
+              </div>
+            </div>
+
+          </div><!-- /.finder__products -->
+
+          <!-- まとめテキスト -->
+          <div class="finder__summary">
+            <h4 class="finder__summary-heading">ディスプレイオーディオを選ぶなら「自由＋快適＋拡張性」</h4>
+            <p class="finder__summary-text">KENWOODのディスプレイオーディオは、スマートフォンとシームレスにつながる「拡張する楽しさ」が魅力。<br>お気に入りのナビアプリや音楽アプリを、車内の大画面でタッチ操作。<br>まるでスマホをそのまま車に載せたようなスマート体験を実現します。</p>
+          </div>
+
+          <!-- 3つのボタン（カードの下） -->
+          <div class="finder__summary-btns">
+            <a href="#drive-style" class="finder__summary-btn">あなたの<br>ドライブスタイル診断</a>
+            <a href="#comparison" class="finder__summary-btn">カーナビ /<br>ディスプレイオーディオのちがい</a>
+            <a href="#finder" class="finder__summary-btn">おすすめ製品一覧</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+
+    <!-- SNSアイコン + JVCKENWOOD Global -->
+    <div class="footer__top">
+      <div class="footer__top-inner">
+        <div class="footer__sns">
+          <img src="assets/images/sns_icon.svg" alt="SNS" class="footer__sns-img">
+        </div>
+        <a href="#" class="footer__global">JVCKENWOOD Global</a>
+      </div>
+    </div>
+
+    <!-- コピーライト + リンク -->
+    <div class="footer__bottom">
+      <div class="footer__bottom-inner">
+        <p class="footer__copy">&copy;JVCKENWOOD Corporation</p>
+        <nav class="footer__nav">
+          <a href="#" class="footer__nav-link">情報セキュリティ基本方針 ↗</a>
+          <a href="#" class="footer__nav-link">製品安全に関する基本方針 ↗</a>
+          <a href="#" class="footer__nav-link">正しい表示への取り組み ↗</a>
+          <a href="#" class="footer__nav-link">サイトのご利用にあたって ↗</a>
+          <a href="#" class="footer__nav-link">個人情報保護方針 ↗</a>
+        </nav>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- 追従ボタン -->
+  <a href="https://www.kenwood.com/jp/car/car-navi/" target="_blank" class="floating-btn" id="floatingBtn">
+    <img src="assets/images/KENWOODLOGO_header.svg" alt="KENWOOD" class="floating-btn__logo">
+    <div class="floating-btn__text">
+      <span class="floating-btn__label">商品サイトへ</span>
+      <span class="floating-btn__line"></span>
+    </div>
+  </a>
+
+  <script>
+    // ハンバーガーメニュー
+    const hamburger = document.querySelector('.header__hamburger');
+    const drawer = document.getElementById('drawer');
+    const overlay = document.getElementById('drawerOverlay');
+
+    function openDrawer() {
+      drawer.classList.add('is-open');
+      overlay.classList.add('is-open');
+      hamburger.classList.add('is-active');
+    }
+    function closeDrawer() {
+      drawer.classList.remove('is-open');
+      overlay.classList.remove('is-open');
+      hamburger.classList.remove('is-active');
+    }
+    hamburger.addEventListener('click', () => {
+      drawer.classList.contains('is-open') ? closeDrawer() : openDrawer();
+    });
+    overlay.addEventListener('click', closeDrawer);
+
+    // ドロワーのリンクをクリックしたら閉じる
+    document.querySelectorAll('.drawer__link').forEach(function(link) {
+      link.addEventListener('click', closeDrawer);
+    });
+
+    // ドライブスタイル：スクロールでBottomをフェードイン表示
+    const cards = document.querySelectorAll('.drive-style__card');
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          // 少し遅らせてフワッと表示
+          setTimeout(function() {
+            entry.target.classList.add('is-visible');
+          }, 300);
+        }
+      });
+    }, {
+      threshold: 0.5   // カードが30%見えたら発動
+    });
+
+    cards.forEach(function(card) {
+      observer.observe(card);
+    });
+
+    // comparison画像フェードイン
+    const fadeBlocks = document.querySelectorAll('.fade-in-block');
+    const fadeObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          fadeObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+    fadeBlocks.forEach(function(block) {
+      fadeObserver.observe(block);
+    });
+
+    // 追従ボタン：スクロールで表示・フッター手前で非表示
+    const floatingBtn = document.getElementById('floatingBtn');
+    window.addEventListener('scroll', function() {
+      const scrollY = window.scrollY;
+      const footer = document.querySelector('.footer');
+      const footerTop = footer.getBoundingClientRect().top + window.scrollY;
+      const windowBottom = scrollY + window.innerHeight;
+
+      if (scrollY > 300 && windowBottom < footerTop + 100) {
+        floatingBtn.classList.add('is-visible');
+      } else {
+        floatingBtn.classList.remove('is-visible');
+      }
+    });
+  </script>
+</body>
+</html>
