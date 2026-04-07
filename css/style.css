@@ -1374,3 +1374,135 @@ body {
     gap: 8px 16px;
   }
 }
+
+/* ============================================
+   FADE IN（comparison画像・ボタン共通）
+   ============================================ */
+
+.fade-in-block {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-in-block.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 左右で時間差をつける */
+.comparison__col:first-child .fade-in-block {
+  transition-delay: 0s;
+}
+.comparison__col:last-child .fade-in-block {
+  transition-delay: 0.15s;
+}
+
+/* ============================================
+   FLOATING BUTTON（追従ボタン）
+   ============================================ */
+
+.floating-btn {
+  position: fixed;
+  left: auto;
+  right: 24px;
+  border-radius: 4px;
+  bottom: 32px;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 1); 
+  width: 200px;
+  height: 84px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  gap: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(16px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  text-decoration: none;
+}
+
+.floating-btn.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.floating-btn:hover {
+  opacity: 0.8;
+}
+
+.floating-btn__logo {
+  width: 140.46px;
+  height: auto;
+  display: block;
+}
+
+.floating-btn__text {
+  margin-left: -4px;
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 140.46px;
+}
+
+.floating-btn__label {
+  margin-top: 0%; 
+  font-size: 11px;
+  font-weight: 400;
+  color: #ffffff;
+  white-space: nowrap;
+  letter-spacing: 0.08em;
+  flex-shrink: 0;
+}
+
+.floating-btn__line {
+  margin-left: 4px; 
+   flex: none;
+  width: 55px;
+  height: 1px;
+  background-color: #ffffff;
+  display: block;
+  position: relative;
+}
+
+.floating-btn__line::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+/* SP */
+@media (max-width: 768px) {
+  .floating-btn.is-visible {
+    transform: scale(0.75);
+    transform-origin: right bottom;
+  }
+  .floating-btn {
+    left: auto;
+    right: 16px;
+    bottom: 20px;
+    width: 180px;
+    height: 76px;
+  
+  }
+  .floating-btn__logo {
+    width: 120px;
+  }
+  .floating-btn__text {
+    width: 120px;
+  }
+  .floating-btn__label {
+    font-size: 10px;
+  }
+}
