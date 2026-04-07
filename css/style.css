@@ -153,6 +153,7 @@ body {
   }
   .header__special {
     font-size: 12px;
+    display: none;
   }
 }
 
@@ -809,10 +810,28 @@ body {
 
 @media (max-width: 768px) {
   .comparison__overlay-btn {
-    width: 40%;
-    height: 40px;
-    font-size: 11px;
-    bottom: 5%;
+    width: 60%;
+    height: auto;
+    min-height: 44px;
+    font-size: 10px;
+    bottom: 4%;
+    padding: 8px 10px;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.4;
+  }
+  .comparison__overlay-btn--large {
+    width: 70%;
+    height: auto;
+    min-height: 52px;
+    font-size: 10px;
+    padding: 10px 12px;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.4;
+  }
+  .comparison__overlay-btn-arrow {
+    font-size: 1.2em;
   }
 }
 
@@ -825,7 +844,7 @@ body {
     padding: 0 20px;
   }
   .comparison__title-text {
-    font-size: 24px;
+    font-size: 22px;
   }
   .comparison__block-heading {
     gap: 8px;
@@ -950,7 +969,7 @@ body {
 /* グレー背景エリア */
 .finder__body {
   background-color: #d2d7e0;
-  padding: 120px 0 80px;
+  padding: 60px 0 80px;
   width: 100%;
 }
 
@@ -1184,8 +1203,17 @@ body {
 /* DAセクション：背景色変更 */
 .finder__body--da {
   background-color: #eeeeee;
-  padding-top: 120
-px;
+  padding-top: 60px;
+}
+
+/* SP時DAセクション上のアキ */
+@media (max-width: 768px) {
+  .finder__body--da {
+    padding-top: 40px;
+  }
+  #finder-da .finder__category-header {
+    padding-top: 0;
+  }
 }
 
 /* まとめボタン3つ */
