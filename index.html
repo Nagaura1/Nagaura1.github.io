@@ -506,7 +506,7 @@
           <div class="finder__summary-btns">
             <a href="#drive-style" class="finder__summary-btn">あなたの<br>ドライブスタイル診断</a>
             <a href="#comparison" class="finder__summary-btn">カーナビ /<br>ディスプレイオーディオのちがい</a>
-            <a href="#" class="finder__summary-btn">おすすめ製品一覧</a>
+            <a href="#finder" class="finder__summary-btn">おすすめ製品一覧</a>
           </div>
 
         </div>
@@ -577,11 +577,11 @@
           // 少し遅らせてフワッと表示
           setTimeout(function() {
             entry.target.classList.add('is-visible');
-          }, 200);
+          }, 300);
         }
       });
     }, {
-      threshold: 0.3   // カードが30%見えたら発動
+      threshold: 0.5   // カードが30%見えたら発動
     });
 
     cards.forEach(function(card) {
